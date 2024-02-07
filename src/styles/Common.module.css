@@ -1,0 +1,134 @@
+.mainContainer {
+  width: 70%;
+  background-color: #F9EFDB;
+  box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+  margin: 16px 0;
+  border-radius: 4px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:start;
+  
+}
+
+.headContainer, .infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+  border-radius: 4px;
+  width: 70%;
+  padding: 2rem;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skillBox {
+  padding: 8px 16px; /* Add some padding inside the boxes */
+  border: 1px solid #ccc; /* A light grey border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f7f7f7; /* A light grey background */
+  text-align: center; /* Center the text inside the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  font-size: 0.9rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+}
+
+.headContainer {
+  flex-direction: row;
+  align-items: center;
+}
+
+.linkContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.linkContainer > a {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.linkImage {
+  width: 4rem;
+  height: 4rem;
+}
+
+.profile {
+  width: 13rem;
+  height: auto;
+  border-radius: 50%;
+  border: 0.5rem solid black;
+}
+
+@media screen and (max-width: 800px) {
+  .headContainer {
+      flex-direction: column;
+  }
+
+  .mainContainer {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.mainTitle {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  padding: 2rem 0rem;
+  background-color: #f0e5d8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 0.3rem solid #c0a080;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.aboutTitle {
+  font-size: 2rem;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  padding: 2rem 0rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #c0a080;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.hobbyImages {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  max-width: 100%;
+  border: 0.3rem #333 solid;
+}
+
+.hobby{
+  width: 14rem;
+  height: auto;
+}

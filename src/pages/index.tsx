@@ -1,0 +1,179 @@
+import React from "react";
+import styles from "../styles/Common.module.css";
+
+const Home: React.FC = () => (
+  <div className={styles.mainContainer}>
+    <p className={styles.mainTitle}>Ibrahim El Khansa</p>
+    <div className={styles.headContainer}>
+      <img src="Profile.jpg" alt="Profile Pic" className={styles.profile} />
+      <div className={styles.linkContainer}>
+        <a
+          href={"mailto:ibrahimelkhansa02@gmail.com"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className={styles.linkImage} src={"/mail.png"} alt={"mail"} />
+        </a>
+        <a
+          href={"https://www.instagram.com/noprobbxb/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={styles.linkImage}
+            src={"/instagram.png"}
+            alt={"instagram"}
+          />
+        </a>
+        <a
+          href={"https://www.linkedin.com/in/ibrahimelkhansa0/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={styles.linkImage}
+            src={"linkedin.png"}
+            alt={"linkedin"}
+          />
+        </a>
+        <a
+          href={"https://www.coursist.org"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={styles.linkImage}
+            src={"coursist.png"}
+            alt={"coursist"}
+          />
+        </a>
+      </div>
+    </div>
+    <div className={styles.infoContainer}>
+      <p className={styles.aboutTitle}>A Little Bit About Me</p>
+      <p>
+        Hello! I'm Ibrahim, a Computer Science Engineering student
+        from Beirut, with a passion for technology and music. As a co-founder of
+        Coursist.org, I combine my tech skills and entrepreneurial spirit to
+        enhance university life for students. Drumming is my artistic outlet,
+        and I love being part of the vibrant music scene. Fluent in Arabic,
+        English, and conversant in German, I'm also skilled in programming
+        languages like TypeScript, JavaScript, Python, and Java. Balancing my
+        time between tech projects, family business, and drumming, I'm all about creating, innovating, and making an impact.
+      </p>
+    </div>
+    <div className={styles.infoContainer}>
+      <p className={styles.aboutTitle}> Projects & Experiences</p>
+      <ul>
+        <li>
+          <strong>
+            Khanas Carpets - Social Media Manager (10/2022 - 03/2023):
+          </strong>
+          <p>
+            Managed social media campaigns, crafted product images, and analyzed
+            performance metrics to enhance online presence and engagement.
+          </p>
+        </li>
+        <li>
+          <strong>
+            Fits Consulting - Digital Transformation Consultant Intern (08/2022
+            - 11/2022):
+          </strong>
+          <p>
+            Streamlined business processes using Bizagi, collaborated across
+            teams, and developed client solutions with JAVA.
+          </p>
+        </li>
+        <li>
+          <strong>
+            American University of Beirut - Coding Tutor (09/2021 - 05/2022):
+          </strong>
+          <p>
+            Delivered engaging tutorials in programming languages, including
+            Python and C++, and facilitated accessible learning resources for
+            students.
+          </p>
+        </li>
+        <li>
+          <strong>
+            Coursist <a href={"https://www.coursist.org"}>(coursist.org)</a> -
+            Co-developer and maintainer (11/2021 - Present):
+          </strong>
+          <p>
+            Co-created a course scheduling website to aid university students,
+            ensuring a user-friendly experience and ongoing feature
+            enhancements.
+          </p>
+        </li>
+        <li>
+          <strong>3azaw2ak Mobile App - Developer (01/2023 - 06/2023):</strong>
+          <p>
+            Developed a cross-platform native app for efficient data processing
+            and real-time updates for a food delivery app that was discontinued.
+          </p>
+        </li>
+        <li>
+          <strong>
+            Messaging Platform - Collaborator (10/2022 - 12/2022):
+          </strong>
+          <p>
+            Worked with a team to build a local chat hosting platform,
+            incorporating advanced features for file sharing and messaging.
+          </p>
+        </li>
+
+        <li>
+          <strong>
+            AUB Physics Summer Program Participant (07/2019 - 08/2019):
+          </strong>
+          <p>
+            Engaged in immersive physics studies and laboratory work, expanding
+            my academic foundation and scientific understanding.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div className={styles.infoContainer}>
+      <p className={styles.aboutTitle}> Skills</p>
+      <div className={styles.skills}>
+      <div className={styles.skillBox}>Java</div>
+      <div className={styles.skillBox}>Python</div>
+      <div className={styles.skillBox}>JavaScript</div>
+      <div className={styles.skillBox}>TypeScript</div>
+      <div className={styles.skillBox}>HTML</div>
+      <div className={styles.skillBox}>CSS</div>
+      <div className={styles.skillBox}>React</div>
+      <div className={styles.skillBox}>React Native</div>
+      <div className={styles.skillBox}>Next.js</div>
+      <div className={styles.skillBox}>Git</div>
+      <div className={styles.skillBox}>Firebase</div>
+      <div className={styles.skillBox}>Python</div>
+      <div className={styles.skillBox}>Microsoft Office</div>
+      <div className={styles.skillBox}>Adobe Photoshop</div>
+      <div className={styles.skillBox}>Adobe Premiere Pro</div>
+      <div className={styles.skillBox}>Adobe After Effects</div>
+      </div>
+    </div>
+    <div className={styles.infoContainer}>
+      <p className={styles.aboutTitle}> Hobbies</p>
+      <p>I'm a drummer and I've played in many events and with hundreds of musicians.
+        I'm also the drummer for a local grunge band based in Beirut called Bliss.
+        Check us out on <a href="https://www.instagram.com/bliss.s.s.s/">instagram.</a>
+      </p>
+      <p>Below are some images of me playing in my favourite events</p>
+      <div className={styles.hobbyImages}>
+      <img className={styles.hobby} src={"/1.png"} alt={"drumming 1"} />
+      <img className={styles.hobby} src={"/2.png"} alt={"drumming 2"} />
+      <img className={styles.hobby} src={"/3.png"} alt={"drumming 3"} />
+      <img className={styles.hobby} src={"/4.png"} alt={"drumming 4"} />
+      <img className={styles.hobby} src={"/5.png"} alt={"drumming 5"} />
+      <img className={styles.hobby} src={"/6.png"} alt={"drumming 6"} />
+      </div>
+    </div>
+    <div className={styles.infoContainer}>
+    <p className={styles.aboutTitle}> Download my CV <a href="/IbrahimElKhansaCV.pdf" download="IbrahimElKhansaCV.pdf">here</a></p>
+    </div>
+  </div>
+);
+
+export default Home;
