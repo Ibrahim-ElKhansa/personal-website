@@ -14,6 +14,7 @@ const Home: React.FC = () => (
         >
           <img className={styles.linkImage} src={"/mail.png"} alt={"mail"} />
         </a>
+
         <a
           href={"https://www.instagram.com/noprobbxb/"}
           target="_blank"
