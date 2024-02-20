@@ -14,7 +14,6 @@ const Home: React.FC = () => (
         >
           <img className={styles.linkImage} src={"/mail.png"} alt={"mail"} />
         </a>
-
         <a
           href={"https://www.instagram.com/noprobbxb/"}
           target="_blank"
@@ -54,14 +53,15 @@ const Home: React.FC = () => (
       <p className={styles.aboutTitle}>A Little Bit About Me</p>
       <p>
         Hello! I'm Ibrahim, a Computer Science Engineering student from Beirut,
-        with a passion for technology and music. As a co-founder of
-        Coursist.org, I combine my tech skills and entrepreneurial spirit to
-        enhance university life for students. Drumming is my artistic outlet,
-        and I love being part of the vibrant music scene. Fluent in Arabic,
-        English, and conversant in German, I'm also skilled in programming
-        languages like TypeScript, JavaScript, Python, and Java. Balancing my
-        time between tech projects, family business, and drumming, I'm all about
-        creating, innovating, and making an impact.
+        fueled by a relentless drive for innovation and creation. I thrive on
+        constantly diving into new projects, exploring fresh ideas and
+        technologies to bring my entrepreneurial visions to life. I have an
+        appetite for learning, constantly acquiring new skills through YouTube
+        and Udemy and when I'm not coding, you'll find me immersed in music,
+        routinely practicing and performing with my band. Drumming is my
+        artistic outlet, and I love being part of the vibrant music scene.
+        Balancing my time between tech projects, family business, and drumming,
+        I'm all about creating, innovating, and making an impact.
       </p>
     </div>
     <div className={styles.infoContainer}>
@@ -123,7 +123,14 @@ const Home: React.FC = () => (
             incorporating advanced features for file sharing and messaging.
           </p>
         </li>
-
+        <li>
+          <strong>Farm Admin Portal (02/2024 - Present):</strong>
+          <p>
+            Spearheaded the development of a comprehensive admin portal for
+            managing a farm and dairy business, handling both frontend and
+            backend responsibilities
+          </p>
+        </li>
         <li>
           <strong>
             AUB Physics Summer Program Participant (07/2019 - 08/2019):
@@ -131,6 +138,32 @@ const Home: React.FC = () => (
           <p>
             Engaged in immersive physics studies and laboratory work, expanding
             my academic foundation and scientific understanding.
+          </p>
+        </li>
+        <li>
+          <strong>Youtuber (09/2017 - 03/2021):</strong>
+          <p>
+            Grew an engaged audience of 3,000 subscribers and accumulated a
+            total of 1.6 million views by producing and sharing compelling
+            content routinely.
+          </p>
+        </li>
+        <li>
+          <strong>Stage Manager for AUB Outdoors (04/2023 - 05/2023):</strong>
+          <p>
+            Served as stage manager taking care of the main acts and
+            coordinating stage preparations, ensuring timely performances and
+            smooth transitions between slots for all performers during the
+            renowned annual event.
+          </p>
+        </li>
+        <li>
+          <strong>Metallica tribute concert (08/2023 - 02/2024):</strong>
+          <p>
+            Executed comprehensive project management and performed as the
+            drummer for Aeterna who played the first Metallica tribute show in
+            years at Metro Al Madina, successfully filling the venue with 600
+            attendees through a strategic marketing and sales campaign.
           </p>
         </li>
       </ul>
@@ -165,9 +198,9 @@ const Home: React.FC = () => (
     <div className={styles.infoContainer}>
       <p className={styles.aboutTitle}> Hobbies</p>
       <p>
-        I'm a drummer and I've played in many events and with hundreds of
-        musicians. I'm also the drummer for a local grunge band based in Beirut
-        called Bliss. Check us out on{" "}
+        As a drummer, I've played in many events and with hundreds of musicians.
+        My main band is a local grunge project based in Beirut called Bliss.
+        Check us out on{" "}
         <a href="https://www.instagram.com/bliss.s.s.s/">instagram.</a>
       </p>
       <p>Below are some images of me playing in my favourite events</p>
