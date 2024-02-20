@@ -52,14 +52,15 @@ const Home: React.FC = () => (
     <div className={styles.infoContainer}>
       <p className={styles.aboutTitle}>A Little Bit About Me</p>
       <p>
-        Hello! I'm Ibrahim, a Computer Science Engineering student
-        from Beirut, with a passion for technology and music. As a co-founder of
+        Hello! I'm Ibrahim, a Computer Science Engineering student from Beirut,
+        with a passion for technology and music. As a co-founder of
         Coursist.org, I combine my tech skills and entrepreneurial spirit to
         enhance university life for students. Drumming is my artistic outlet,
         and I love being part of the vibrant music scene. Fluent in Arabic,
         English, and conversant in German, I'm also skilled in programming
         languages like TypeScript, JavaScript, Python, and Java. Balancing my
-        time between tech projects, family business, and drumming, I'm all about creating, innovating, and making an impact.
+        time between tech projects, family business, and drumming, I'm all about
+        creating, innovating, and making an impact.
       </p>
     </div>
     <div className={styles.infoContainer}>
@@ -136,42 +137,58 @@ const Home: React.FC = () => (
     <div className={styles.infoContainer}>
       <p className={styles.aboutTitle}> Skills</p>
       <div className={styles.skills}>
-      <div className={styles.skillBox}>Java</div>
-      <div className={styles.skillBox}>Python</div>
-      <div className={styles.skillBox}>JavaScript</div>
-      <div className={styles.skillBox}>TypeScript</div>
-      <div className={styles.skillBox}>HTML</div>
-      <div className={styles.skillBox}>CSS</div>
-      <div className={styles.skillBox}>React</div>
-      <div className={styles.skillBox}>React Native</div>
-      <div className={styles.skillBox}>Next.js</div>
-      <div className={styles.skillBox}>Git</div>
-      <div className={styles.skillBox}>Firebase</div>
-      <div className={styles.skillBox}>Python</div>
-      <div className={styles.skillBox}>Microsoft Office</div>
-      <div className={styles.skillBox}>Adobe Photoshop</div>
-      <div className={styles.skillBox}>Adobe Premiere Pro</div>
-      <div className={styles.skillBox}>Adobe After Effects</div>
+        {[
+          "Java",
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "HTML",
+          "CSS",
+          "React",
+          "React Native",
+          "Next.js",
+          "Git",
+          "Firebase",
+          "Microsoft Office",
+          "Adobe Photoshop",
+          "Adobe Premiere Pro",
+          "Adobe After Effects",
+          "Latex",
+        ].map((v, i) => (
+          <div key={i} className={styles.skillBox}>
+            {v}
+          </div>
+        ))}
       </div>
     </div>
     <div className={styles.infoContainer}>
       <p className={styles.aboutTitle}> Hobbies</p>
-      <p>I'm a drummer and I've played in many events and with hundreds of musicians.
-        I'm also the drummer for a local grunge band based in Beirut called Bliss.
-        Check us out on <a href="https://www.instagram.com/bliss.s.s.s/">instagram.</a>
+      <p>
+        I'm a drummer and I've played in many events and with hundreds of
+        musicians. I'm also the drummer for a local grunge band based in Beirut
+        called Bliss. Check us out on{" "}
+        <a href="https://www.instagram.com/bliss.s.s.s/">instagram.</a>
       </p>
       <p>Below are some images of me playing in my favourite events</p>
       <div className={styles.hobbyImages}>
-      <img className={styles.hobby} src={"/1.png"} alt={"drumming 1"} />
-      <img className={styles.hobby} src={"/2.png"} alt={"drumming 2"} />
-      <img className={styles.hobby} src={"/3.png"} alt={"drumming 3"} />
-      <img className={styles.hobby} src={"/4.png"} alt={"drumming 4"} />
-      <img className={styles.hobby} src={"/5.png"} alt={"drumming 5"} />
-      <img className={styles.hobby} src={"/6.png"} alt={"drumming 6"} />
+        {[1, 2, 3, 4, 5, 6].map((v, i) => (
+          <img
+            key={i}
+            className={styles.hobby}
+            src={`/${v}.png`}
+            alt={`drumming ${v}`}
+          />
+        ))}
       </div>
     </div>
     <div className={styles.infoContainer}>
-    <p className={styles.aboutTitle}> Download my CV <a href="/IbrahimElKhansaCV.pdf" download="IbrahimElKhansaCV.pdf">here</a></p>
+      <p className={styles.aboutTitle}>
+        {" "}
+        Download my CV{" "}
+        <a href="/IbrahimElKhansaCV.pdf" download="IbrahimElKhansaCV.pdf">
+          here
+        </a>
+      </p>
     </div>
   </div>
 );
