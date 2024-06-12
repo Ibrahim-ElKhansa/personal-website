@@ -51,7 +51,7 @@ const Home: React.FC = () => (
     </div>
     <div className={styles.infoContainer}>
       <p className={styles.aboutTitle}>A Little Bit About Me</p>
-      <p>
+      <p className={styles.aboutDescription}>
         Hello! I'm Ibrahim, a Computer Science Engineering student from Beirut,
         fueled by a relentless drive for innovation and creation. I thrive on
         constantly diving into new projects, exploring fresh ideas and
@@ -66,14 +66,14 @@ const Home: React.FC = () => (
     </div>
     <div className={styles.infoContainer}>
       <p className={styles.aboutTitle}> Projects & Experiences</p>
-      <ul>
+      <ul className={styles.projects}>
         <li>
           <strong>
-            Khanas Carpets - Social Media Manager (10/2022 - 03/2023):
+            Murex - Java Software Development Intern (06/2024 - 08/2024):
           </strong>
           <p>
-            Managed social media campaigns, crafted product images, and analyzed
-            performance metrics to enhance online presence and engagement.
+            Currently completing an internship at Murex as a java software
+            developer within the BPM Deimos team.
           </p>
         </li>
         <li>
@@ -88,7 +88,16 @@ const Home: React.FC = () => (
         </li>
         <li>
           <strong>
-            American University of Beirut - Coding Tutor (09/2021 - 05/2022):
+            Khanas Carpets - Social Media Manager (10/2022 - 03/2023):
+          </strong>
+          <p>
+            Managed social media campaigns, crafted product images, and analyzed
+            performance metrics to enhance online presence and engagement.
+          </p>
+        </li>
+        <li>
+          <strong>
+            American University of Beirut - Coding Tutor (09/2021 - 05/2024):
           </strong>
           <p>
             Delivered engaging tutorials in programming languages, including
@@ -128,7 +137,15 @@ const Home: React.FC = () => (
           <p>
             Spearheaded the development of a comprehensive admin portal for
             managing a farm and dairy business, handling both frontend and
-            backend responsibilities
+            backend responsibilities.
+          </p>
+        </li>
+        <li>
+          <strong>Exchange Rate Website (02/2024 - 05/2024):</strong>
+          <p>
+            Developed a user-friendly website that allows clients to submit
+            currency exchange trades and to check the current exchange rate as
+            part of a software development lab.
           </p>
         </li>
         <li>
@@ -182,6 +199,8 @@ const Home: React.FC = () => (
           "React Native",
           "Next.js",
           "Git",
+          "Maven",
+          "Jenkins",
           "Firebase",
           "Microsoft Office",
           "Adobe Photoshop",
@@ -197,15 +216,17 @@ const Home: React.FC = () => (
     </div>
     <div className={styles.infoContainer}>
       <p className={styles.aboutTitle}> Hobbies</p>
-      <p>
+      <p className={styles.hobbyText}>
         As a drummer, I've played in many events and with hundreds of musicians.
-        My main band is a local grunge project based in Beirut called Bliss.
+        My main band is Bliss, a local grunge/indie project based in Beirut.
         Check us out on{" "}
         <a href="https://www.instagram.com/bliss.s.s.s/">instagram.</a>
       </p>
-      <p>Below are some images of me playing in my favourite events</p>
+      <p className={styles.hobbyText}>
+        Below are some images of me playing in my favourite events
+      </p>
       <div className={styles.hobbyImages}>
-        {[1, 2, 3, 4, 5, 6].map((v, i) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((v, i) => (
           <img
             key={i}
             className={styles.hobby}

@@ -3,6 +3,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+      <link rel="icon" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="icon" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
           rel="stylesheet"

@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyC9OoSwdxG3JkmOClVD2sXx0shh_sacs4w",
@@ -7,9 +8,12 @@ const firebaseConfig = {
   projectId: "ibrahim-elkhansa-resume",
   storageBucket: "ibrahim-elkhansa-resume.appspot.com",
   messagingSenderId: "512317883102",
-  appId: "1:512317883102:web:6c241b98788953f179f84f",
-  measurementId: "G-GK6D7RLJE6"
+  appId: "1:512317883102:web:69b8995da906cbf079f84f",
+  measurementId: "G-TZYLR6QZVC"
 };
 
-export const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+export {app, db, storage };
