@@ -32,14 +32,14 @@
 }
 
 .skillBox {
-  padding: 8px 16px; /* Add some padding inside the boxes */
-  border: 1px solid #ccc; /* A light grey border */
-  border-radius: 4px; /* Rounded corners */
-  background-color: #f7f7f7; /* A light grey background */
-  text-align: center; /* Center the text inside the box */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-  font-size: 0.9rem; /* Adjust the font size as needed */
-  font-weight: bold; /* Make the text bold */
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .headContainer {
@@ -73,17 +73,6 @@
   height: auto;
   border-radius: 50%;
   border: 0.5rem solid black;
-}
-
-@media screen and (max-width: 800px) {
-  .headContainer {
-      flex-direction: column;
-  }
-
-  .mainContainer {
-    width: 100%;
-    margin: 0;
-  }
 }
 
 .mainTitle {
@@ -164,4 +153,27 @@
 .hobby{
   width: 14rem;
   height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .headContainer {
+      flex-direction: column;
+  }
+
+  .mainContainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  .aboutDescription {
+    font-size: 0.9rem;
+  }
+
+  .projects {
+    font-size: 0.9rem;
+  }
+
+  .hobbyText {
+    font-size: 0.9rem;
+  }
 }
