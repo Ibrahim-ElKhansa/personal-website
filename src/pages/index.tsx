@@ -88,7 +88,7 @@ const Home: React.FC = () => (
         </li>
         <li>
           <strong>
-            Khanas Carpets - Social Media Manager (10/2022 - 03/2023):
+            Khansa Carpets - Social Media Manager (10/2022 - 03/2023):
           </strong>
           <p>
             Managed social media campaigns, crafted product images, and analyzed
