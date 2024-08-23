@@ -72,9 +72,10 @@ const Home: React.FC = () => {
       );
       const hobbyImagesUrls = await Promise.all(hobbyImagePromises);
       setHobbyImages(hobbyImagesUrls);
+
+      setLoading(false);
     };
 
-    setLoading(false);
     fetchData();
   }, []);
 
@@ -121,7 +122,7 @@ const Home: React.FC = () => {
             />
           </a>
           <a
-            href={"https://www.coursist.org"}
+            href={"https://www.coursis.org"}
             target="_blank"
             rel="noopener noreferrer"
           >
