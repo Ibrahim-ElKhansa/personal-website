@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Common.module.css";
-import { db, storage } from "../../firebase";
-import { getDoc, doc, collection, getDocs } from "firebase/firestore";
-import { ref, getDownloadURL } from "firebase/storage";
 import skills from "../data/skills";
 import aboutMe from "../data/aboutMe";
 import projects from "../data/projects";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function range(start: number, end: number) {
   return Array(end - start + 1)
@@ -39,13 +39,13 @@ const Home: React.FC = () => {
         <img src={"Profile.jpg"} alt="Profile Pic" className={styles.profile} />
         <div className={styles.linkContainer}>
           <a href={"mailto:ibrahimelkhansa02@gmail.com"} target="_blank" rel="noopener noreferrer">
-            <img className={styles.linkImage} src={"/mail.png"} alt={"mail"} />
+            <EmailIcon/>
           </a>
           <a href={"https://www.instagram.com/noprobbxb/"} target="_blank" rel="noopener noreferrer">
-            <img className={styles.linkImage} src={"/instagram.png"} alt={"instagram"} />
+            <InstagramIcon/>
           </a>
           <a href={"https://www.linkedin.com/in/ibrahimelkhansa0/"} target="_blank" rel="noopener noreferrer">
-            <img className={styles.linkImage} src={"linkedin.png"} alt={"linkedin"} />
+            <LinkedInIcon/>
           </a>
           <a href={"https://www.coursis.org"} target="_blank" rel="noopener noreferrer">
             <img className={styles.linkImage} src={"coursis.png"} alt={"coursis"} />
@@ -54,9 +54,7 @@ const Home: React.FC = () => {
       </div>
       <div className={styles.infoContainer}>
         <p className={styles.aboutTitle}>A Little Bit About Me</p>
-        <p className={styles.aboutDescription}>
-          {aboutMe}
-        </p>
+        <p className={styles.aboutDescription}>{aboutMe}</p>
       </div>
       <div className={styles.infoContainer}>
         <p className={styles.aboutTitle}> Projects & Experiences</p>
@@ -90,7 +88,7 @@ const Home: React.FC = () => {
         </p>
         <p className={styles.hobbyText}>Below are some images of me playing in my favourite events</p>
         <div className={styles.hobbyImages}>
-          {range(1,12).map((num, i) => (
+          {range(1, 12).map((num, i) => (
             <img key={i} className={styles.hobby} src={`/${num}.png`} alt={`drumming ${i + 1}`} />
           ))}
         </div>
