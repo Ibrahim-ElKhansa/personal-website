@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           <a href={"mailto:ibrahimelkhansa02@gmail.com"} target="_blank" rel="noopener noreferrer">
             <EmailIcon/>
           </a>
-          <a href={"https://www.instagram.com/noprobbxb/"} target="_blank" rel="noopener noreferrer">
+          <a href={"https://www.instagram.com/ibrahim.elkhansa/"} target="_blank" rel="noopener noreferrer">
             <InstagramIcon/>
           </a>
           <a href={"https://www.linkedin.com/in/ibrahimelkhansa0/"} target="_blank" rel="noopener noreferrer">
