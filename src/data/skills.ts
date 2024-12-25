@@ -1,8 +1,8 @@
 const skills = [
   "Java",
   "Python",
-  "Javascript",
-  "Typescript",
+  "JavaScript",
+  "TypeScript",
   "HTML",
   "CSS",
   "React",
@@ -16,11 +16,22 @@ const skills = [
   "MongoDB",
   "JavaSwing",
   "Flask",
+  "PostgreSQL",
+  "Docker",
+  "Vercel",
+  "Fly.io",
+  "Expo",
+  "Node.js",
+  "Kotlin",
+  "JavaFX",
+  "C++",
+  "MATLAB",
   "Microsoft Office",
   "Latex",
   "Photoshop",
   "Premiere Pro",
-  "After Effects"
+  "After Effects",
+  "Figma"
 ];
 
 export default skills;

@@ -83,12 +83,9 @@ const Home: React.FC = () => {
       <div className={styles.infoContainer}>
         <p className={styles.aboutTitle}> Hobbies</p>
         <p className={styles.hobbyText}>
-          As a drummer, I've played in many events and with hundreds of musicians. My main band is Bliss, a local grunge/indie project based in
-          Beirut. Check us out on <a href="https://www.instagram.com/bliss.s.s.s/">instagram.</a>
-        </p>
-        <p className={styles.hobbyText}>Below are some images of me playing in my favourite events</p>
+          As a drummer, I've played in many events and with hundreds of musicians. Below are some images of me playing in my favourite events:</p>
         <div className={styles.hobbyImages}>
-          {range(1, 12).map((num, i) => (
+          {range(1, 10).map((num, i) => (
             <img key={i} className={styles.hobby} src={`/${num}.png`} alt={`drumming ${i + 1}`} />
           ))}
         </div>
