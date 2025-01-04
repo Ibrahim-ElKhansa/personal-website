@@ -34,7 +34,7 @@ const Home: React.FC = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <p className={styles.mainTitle}>Ibrahim Khansa</p>
+      <p className={styles.mainTitle}>Ibrahim El Khansa</p>
       <div className={styles.headContainer}>
         <img src={"Profile.jpg"} alt="Profile Pic" className={styles.profile} />
         <div className={styles.linkContainer}>
