@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Ibrahim El Khansa - Portfolio",
-  description: "Hello, my name is Ibrahim El Khansa and this is my portfolio website showcasing my work experiences and what I previously worked on. I have been a full stack developer since 2022 and you can explore my projects like Maqam Network, MusicLeb, Melody Mits, H.A.D.I., Coursis and 3azaw2ak",
+  description: "Hello, my name is Ibrahim El Khansa and this is my portfolio website showcasing my work experiences and developments. I have been a full stack developer since 2022 and you can explore my projects like Maqam Network, MusicLeb, Melody Mits, H.A.D.I., Coursis and 3azaw2ak",
   twitter: {
     card: "summary_large_image",
   },
