@@ -175,7 +175,7 @@ export default function HomePage() {
       </section>
       <section className="infoContainer">
         <p className="title">About Me</p>
-        <p className="aboutDescription">I’m a full-stack software engineer since 2022, focused on building practical solutions that solve real-world problems and address gaps in the market. I graduated from the American University of Beirut in May 2025 with a degree in Computer Science Engineering and a minor in Economics. Ever since I learnt to develop web apps in my second year of college, I have been working independently on projects that merge technical expertise with innovative thinking to create value for users and communities.
+        <p className="aboutDescription">I've been a full-stack software engineer since 2022, focused on building practical solutions that solve real-world problems and address gaps in the market. I graduated from the American University of Beirut in May 2025 with a degree in Computer Science Engineering and a minor in Economics. Ever since I learnt to develop web apps in my second year of college, I have been working independently on projects that merge technical expertise with innovative thinking to create value for users and communities.
           <br />
           <br />
           I take an entrepreneurial approach to software development, identifying opportunities, building solutions from the ground up, and iterating until I deliver something meaningful. My projects have been entirely self-directed, and I enjoy working across the full stack to bring ideas to life. I’m always exploring new technologies and approaches to expand my skills and make a positive impact through my work.</p>
