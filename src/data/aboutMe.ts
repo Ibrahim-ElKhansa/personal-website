@@ -1,3 +1,0 @@
-const aboutMe = "Hello! I'm Ibrahim, a Computer Science Engineering student from Beirut, fueled by a relentless drive for innovation and creation. I thrive on constantly diving into new projects, exploring fresh ideas and technologies to bring my entrepreneurial visions to life. I have an appetite for learning, constantly acquiring new skills through YouTube and Udemy and when I'm not coding, you'll find me immersed in music, routinely practicing and performing with my band. Drumming is my artistic outlet, and I love being part of the vibrant music scene. Balancing my time between tech projects, family business, and drumming, I'm all about creating, innovating, and making an impact."
-
-export default aboutMe;

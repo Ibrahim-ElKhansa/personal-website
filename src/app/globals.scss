@@ -1,0 +1,739 @@
+:root {
+  display: flex;
+  justify-content: center;
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: var(--font-inter), Arial;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100svw;
+  height: auto;
+  overscroll-behavior: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer {
+  width: 100%;
+  background-color: #F9EFDB;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .05), 2px 2px 5px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.mainTitle {
+  font-size: 40px;
+  color: #333;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  padding: 2rem 0rem;
+  background-color: #f0e5d8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 0.3rem solid #c0a080;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.headContainer,
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .05), 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 900px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.headContent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #c0a080;
+}
+
+.image-container {
+  width: 30%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.headInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  padding: 10px;
+  color: #333;
+
+  &__line-1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &__line-2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__line-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &__skill {
+    width: fit-content;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+  }
+
+  &__line-4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    & a {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      color: white;
+      background-color: #c0a080;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-weight: 400;
+      height: 30px;
+    }
+  }
+}
+
+.title {
+  font-size: 30px;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 2px solid #c0a080;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.aboutDescription {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-weight: 400;
+  border-bottom: 2px solid #c0a080;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+}
+
+.experience {
+  &__line-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+
+      .experienceTitle {
+        display: flex;
+        font-size: inherit;
+        align-items: center;
+
+        &::after {
+          content: "–";
+          margin: 0 4px;
+          color: #333;
+          font-weight: 300;
+        }
+      }
+    }
+
+    &__period {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-style: italic;
+      color: #333333b0;
+      padding-right: 10px;
+    }
+  }
+
+  & p {
+    padding-left: 25px;
+  }
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .projectImageContainer {
+    width: 15%;
+    aspect-ratio: 1/1;
+    position: relative;
+  }
+
+  .projectInformation {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+
+    &__line-1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__header {
+        display: flex;
+        align-items: center;
+
+        & .projectTitle {
+          font-weight: 400;
+          font-size: 18px;
+
+          & a {
+            color: #333;
+            font-weight: 500;
+          }
+
+          &::after {
+            content: "–";
+            margin: 0 4px;
+            color: #333;
+            font-weight: 300;
+          }
+        }
+
+        & .projectSubTitle {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      &__period {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        color: #333333b0;
+        padding-right: 10px;
+
+      }
+    }
+
+    &__line-2 {
+      font-size: 18px;
+      color: #333;
+    }
+  }
+}
+
+.hobbyText {
+  width: 95%;
+  color: #333;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.hobbyImages {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  width: 95%;
+  border: 0.3rem #333 solid;
+  height: 250px;
+  text-align: center;
+}
+
+.hobbyImageContainer {
+  height: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+@media (max-width: 950px) {
+  .mainTitle {
+    font-size: 35px;
+  }
+
+  .headContainer,
+  .infoContainer {
+    width: 95%;
+  }
+
+  .headContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    margin-top: 10px;
+    width: 40%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #c0a080;
+  }
+
+  .headInformation {
+    width: 100%;
+
+    &__line-1 {
+      font-size: 26px;
+    }
+
+    &__line-2 {
+      font-size: 18px;
+    }
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .aboutDescription {
+    font-size: 16px;
+  }
+
+  .experiences {
+    padding: 10px;
+  }
+
+  .experience {
+    &__line-1 {
+      margin-bottom: 2px;
+
+      &__header {
+        font-size: 16px;
+      }
+
+      &__period {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-style: italic;
+        color: #333333b0;
+      }
+    }
+
+    & p {
+      font-size: 14px;
+    }
+  }
+
+  .projects {
+    padding: 10px;
+  }
+
+  .project {
+    flex-direction: column;
+
+    .projectImageContainer {
+      width: 25%;
+      margin-bottom: 5px;
+    }
+
+    .projectInformation {
+      width: 100%;
+      padding-left: 0;
+
+      &__line-1 {
+        &__header {
+          & .projectTitle {
+            font-size: 16px;
+          }
+
+          & a {
+            font-weight: 400;
+          }
+        }
+      }
+
+      &__period {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .hobbyText {
+    font-size: 16px;
+  }
+
+  .hobbyImages {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 28px;
+  }
+
+  .headInformation {
+    &__line-1 {
+      font-size: 22px;
+    }
+
+    &__line-2 {
+      font-size: 16px;
+    }
+
+    &__line-3 {
+      gap: 3px;
+    }
+
+    &__skill {
+      padding: 3px 6px;
+      font-size: 12px;
+    }
+
+    &__line-4 {
+      gap: 6px;
+
+      & a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .aboutDescription {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .experiences {
+    padding: 10px 0;
+  }
+
+  .experience {
+    &__line-1 {
+      margin-bottom: 0;
+
+      &__header {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+        .experienceTitle {
+          & svg {
+            font-size: 18px;
+          }
+
+          &::after {
+            content: "";
+          }
+        }
+
+        .experienceRole {
+          font-size: 13px;
+          padding-left: 17px;
+          margin-bottom: 5px;
+          max-width: 90%;
+        }
+      }
+
+      &__period {
+        font-size: 12px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 5px;
+      }
+    }
+
+    & p {
+      font-size: 13px;
+      padding-left: 17px;
+    }
+  }
+
+  .project {
+    flex-direction: column;
+
+    .projectImageContainer {
+      width: 25%;
+      margin-bottom: 5px;
+    }
+
+    .projectInformation {
+      width: 100%;
+      padding-left: 0;
+
+      &__line-1 {
+
+
+        &__header {
+          align-items: flex-start;
+          flex-direction: column;
+
+          .projectTitle {
+            font-weight: 500;
+
+            & a {
+              font-weight: 500;
+            }
+
+            &::after {
+              content: "";
+            }
+          }
+
+          .projectSubTitle {
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+        }
+
+        &__period {
+          font-size: 13px;
+          margin-bottom: 5px;
+        }
+      }
+
+      &__line-2 {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .hobbyText {
+    font-size: 14px;
+  }
+
+  .hobbyImages {
+    height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mainTitle {
+    font-size: 22px;
+  }
+
+  .headContainer,
+  .infoContainer {
+    margin-bottom: 15px;
+  }
+
+  .headInformation {
+    &__line-1 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    &__line-2 {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    &__line-3 {
+      gap: 3px;
+      justify-content: center;
+    }
+
+    &__skill {
+      font-size: 11px;
+    }
+
+    &__line-4 {
+      justify-content: center;
+
+      gap: 4px;
+
+      & a {
+        font-size: 12px;
+
+        & svg {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .aboutDescription {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .experience {
+    &__line-1 {
+      &__header {
+        font-size: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .experienceTitle {
+          & svg {
+            font-size: 16px;
+          }
+
+          &::after {
+            content: "";
+          }
+        }
+
+        .experienceRole {
+          font-size: 11px;
+          margin-bottom: 5px;
+        }
+      }
+
+      &__period {
+        font-size: 10px;
+        padding-right: 8px;
+      }
+    }
+
+    & p {
+      font-size: 12px;
+      padding-right: 5px;
+      font-weight: 300;
+    }
+  }
+
+  .project {
+    .projectImageContainer {
+      width: 30%;
+    }
+
+    .projectInformation {
+      width: 100%;
+      padding-left: 0;
+
+      &__line-1 {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &__header {
+          align-items: center;
+          font-size: 14px;
+
+          .projectTitle {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 5px;
+
+            & a {
+              font-weight: 500;
+            }
+
+            &::after {
+              content: "";
+            }
+          }
+
+          .projectSubTitle {
+            font-size: 13px;
+            margin-bottom: 5px;
+          }
+        }
+
+        &__period {
+          font-size: 13px;
+          margin-bottom: 5px;
+        }
+      }
+
+      &__line-2 {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .hobbyText {
+    font-size: 12px;
+  }
+
+  .hobbyImages {
+    height: 120px;
+  }
+}
