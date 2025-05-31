@@ -42,7 +42,7 @@ export default function HomePage() {
   const experiences: Experience[] = [
     {
       company: "American University of Beirut",
-      role: "Research Assistant",
+      role: "Part Time Research Assistant",
       period: "June 2025 - Present",
       description:
         "Conducting research in computational musicology and interactive music systems. Leading the development of software tools that facilitate the study of Arabic music theory, with a focus on tuning systems, maqamat, ajnas and their transpositions.",
