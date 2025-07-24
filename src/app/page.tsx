@@ -20,6 +20,7 @@ import MelodyMitsImage from "@/../public/projects/melody-mits.png";
 import MaqamNetwork from "@/../public/projects/maqam-network.png";
 import AazawaakImage from "@/../public/projects/aazawaak.png";
 import WheresMyShattafeImage from "@/../public/projects/wheres-my-shattafe.png";
+import MyUnfollowersImage from "@/../public/projects/my-unfollowers.png";
 
 interface Experience {
   company: string;
@@ -72,6 +73,15 @@ export default function HomePage() {
   ];
 
   const projects: Project[] = [
+    {
+      title: "My Unfollowers",
+      subTitle: "Instagram Followers Analyzer",
+      description:
+        "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
+      link: "https://my-unfollowers.vercel.app/",
+      image: MyUnfollowersImage,
+      period: "July 2025 - July 2025",
+    },
     {
       title: "Where's My Shattafe",
       subTitle: "Community-Driven Public Bidet Map",
