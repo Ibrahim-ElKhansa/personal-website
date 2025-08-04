@@ -1,4 +1,5 @@
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import Image, { StaticImageData } from "next/image";
 import ProfilePic from "@/../public/profile-pic.png";
@@ -35,7 +36,7 @@ interface Project {
   description: string;
   link: string;
   image: StaticImageData;
-  period: string;
+  duration: number;
 }
 
 export default function HomePage() {
@@ -45,7 +46,7 @@ export default function HomePage() {
     {
       company: "American University of Beirut",
       role: "Part Time Research Assistant",
-      period: "June 2025 - Present",
+      period: "June 2025 - Aug 2025",
       description:
         "Conducting research in computational musicology and interactive music systems. Leading the development of software tools that facilitate the study of Arabic music theory, with a focus on tuning systems, maqamat, ajnas and their transpositions.",
     },
@@ -74,31 +75,13 @@ export default function HomePage() {
 
   const projects: Project[] = [
     {
-      title: "My Unfollowers",
-      subTitle: "Instagram Followers Analyzer",
+      title: "Coursis",
+      subTitle: "Advanced Scheduling Tool",
       description:
-        "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
-      link: "https://my-unfollowers.vercel.app/",
-      image: MyUnfollowersImage,
-      period: "July 2025 - July 2025",
-    },
-    {
-      title: "Where's My Shattafe",
-      subTitle: "Community-Driven Public Bidet Map",
-      description:
-        "An open-source platform for mapping public toilets with bidets. Features interactive mapping with CartoDB and Leaflet, Google OAuth authentication, real-time location finding, and community-driven submissions with moderation. Built with Next.js 15, Supabase, and TypeScript.",
-      link: "https://wheres-my-shattafe.vercel.app",
-      image: WheresMyShattafeImage,
-      period: "July 2025 - July 2025",
-    },
-    {
-      title: "Maqam Network",
-      subTitle: "Arabic Music Theory Platform",
-      description:
-        "An educational platform for exploring Arabic music theory, featuring maqamat, ajnas, seyr, and tuning systems. Developed tools for transpositions, interactive visualizations, and dynamic audio playback. Built with Next.js, TypeScript, and SCSS.",
-      link: "https://arabic-maqam-network.vercel.app/",
-      image: MaqamNetwork,
-      period: "Feb 2025 - Present",
+        "A platform that helps students efficiently generate optimal university schedules based on dynamic algorithms, custom data structures, and user preferences. Built entirely using Next.js and Firebase, Coursis now serves over 10,000 users.",
+      link: "https://coursis.org",
+      image: CoursisImage,
+      duration: 42,
     },
     {
       title: "MusicLeb",
@@ -107,7 +90,7 @@ export default function HomePage() {
         "A virtual hub for the Lebanese music scene, connecting musicians, artists, and fans. Developed the full-stack application using Next.js, MongoDB, and Vercel, with a focus on performance optimization and community building.",
       link: "https://www.musicleb.com",
       image: MusiclebImage,
-      period: "Jan  2025 – Present",
+      duration: 30,
     },
     {
       title: "Melody Mits",
@@ -116,7 +99,16 @@ export default function HomePage() {
         "A gesture-controlled MIDI glove that maps hand movements into musical commands. Designed to integrate with AI models like RAVE, it allows musicians to create and manipulate sound in real time through intuitive gestures.",
       link: "https://github.com/Ibrahim-ElKhansa/melody-mits",
       image: MelodyMitsImage,
-      period: "Sep 2024 - May 2025",
+      duration: 26,
+    },
+    {
+      title: "Maqam Network",
+      subTitle: "Arabic Music Theory Platform",
+      description:
+        "An educational platform for exploring Arabic music theory, featuring maqamat, ajnas, seyr, and tuning systems. Developed tools for transpositions, interactive visualizations, and dynamic audio playback. Built with Next.js, TypeScript, and SCSS.",
+      link: "https://arabic-maqam-network.vercel.app/",
+      image: MaqamNetwork,
+      duration: 25,
     },
     {
       title: "H.A.D.I.",
@@ -125,16 +117,7 @@ export default function HomePage() {
         "A machine learning-powered platform that predicts diseases based on user-reported symptoms. Integrated OpenAI’s GPT API for medication data, deployed using Docker, Vercel, and Fly.io for scalability and performance.",
       link: "https://hadi-online-doctor.vercel.app",
       image: HadiImage,
-      period: "Oct 2024 – Dec 2024",
-    },
-    {
-      title: "Coursis",
-      subTitle: "Advanced Scheduling Tool",
-      description:
-        "A platform that helps students efficiently generate optimal university schedules based on dynamic algorithms, custom data structures, and user preferences. Built entirely using Next.js and Firebase, Coursis now serves over 10,000 users.",
-      link: "https://coursis.org",
-      image: CoursisImage,
-      period: "Nov 2022 – Sep 2024",
+      duration: 12,
     },
     {
       title: "3azaw2ak",
@@ -143,7 +126,25 @@ export default function HomePage() {
         "A cross-platform mobile app for Android and iOS built with React Native, Expo, and Firebase. Developed a serverless backend with Firebase Cloud Functions, real-time data sync with Firebase Realtime Database, and robust authentication using Firebase Authentication and App Check.",
       link: "",
       image: AazawaakImage,
-      period: "Jan 2023 – June 2023",
+      duration: 10,
+    },
+    {
+      title: "Where's My Shattafe",
+      subTitle: "Community-Driven Public Bidet Map",
+      description:
+        "An open-source platform for mapping public toilets with bidets. Features interactive mapping with CartoDB and Leaflet, Google OAuth authentication, real-time location finding, and community-driven submissions with moderation. Built with Next.js 15, Supabase, and TypeScript.",
+      link: "https://wheres-my-shattafe.vercel.app",
+      image: WheresMyShattafeImage,
+      duration: 2,
+    },
+    {
+      title: "My Unfollowers",
+      subTitle: "Instagram Followers Analyzer",
+      description:
+        "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
+      link: "https://my-unfollowers.vercel.app/",
+      image: MyUnfollowersImage,
+      duration: 1.5,
     }
   ];
 
@@ -175,6 +176,10 @@ export default function HomePage() {
               <a href={"https://www.linkedin.com/in/ibrahimelkhansa/"} target="_blank" rel="noopener noreferrer">
                 <LinkedInIcon />
                 LinkedIn
+              </a>
+              <a href={"https://github.com/Ibrahim-ElKhansa"} target="_blank" rel="noopener noreferrer">
+                <GitHubIcon />
+                GitHub
               </a>
               <a href={"/IbrahimElKhansaCV.pdf"} download="IbrahimElKhansaCV.pdf">
                 Download My CV
@@ -216,7 +221,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="infoContainer">
-        <h2 className="title">Independent Projects</h2>
+        <h2 className="title">Projects</h2>
         <div className="projects">
           {projects.map((project, index) => (
             <div className="project" key={index}>
@@ -237,7 +242,6 @@ export default function HomePage() {
                     </h3>
                     <span className="projectSubTitle">{project.subTitle}</span>
                   </span>
-                  <span className="projectInformation__line-1__period">{project.period}</span>
                 </div>
                 <p className="projectInformation__line-2">{project.description}</p>
               </div>
