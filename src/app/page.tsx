@@ -22,6 +22,7 @@ import MaqamNetwork from "@/../public/projects/maqam-network.png";
 import AazawaakImage from "@/../public/projects/aazawaak.png";
 import WheresMyShattafeImage from "@/../public/projects/wheres-my-shattafe.png";
 import MyUnfollowersImage from "@/../public/projects/my-unfollowers.png";
+import WhatsAppMentionerImage from "@/../public/projects/whatsapp-mentioner.png";
 
 interface Experience {
   company: string;
@@ -109,6 +110,15 @@ export default function HomePage() {
       link: "https://arabic-maqam-network.vercel.app/",
       image: MaqamNetwork,
       duration: 25,
+    },
+    {
+      title: "WhatsApp Mentioner",
+      subTitle: "Group Mentioning Automation Tool",
+      description:
+        "A simple GUI application that automates mentioning everyone in a WhatsApp group using pyautogui and tkinter. Features configurable settings, real-time progress tracking, and a standalone executable for easy distribution (click the link).",
+      link: "/WhatsApp-Mentioner.exe",
+      image: WhatsAppMentionerImage,
+      duration: 3,
     },
     {
       title: "H.A.D.I.",
@@ -233,9 +243,15 @@ export default function HomePage() {
                   <span className="projectInformation__line-1__header">
                     <h3 className="projectTitle">
                       {project.link ? (
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">
-                          {project.title}
-                        </a>
+                        project.link.startsWith("/") ? (
+                          <a href={project.link} download>
+                            {project.title}
+                          </a>
+                        ) : (
+                          <a href={project.link} target="_blank" rel="noopener noreferrer">
+                            {project.title}
+                          </a>
+                        )
                       ) : (
                         project.title
                       )}
