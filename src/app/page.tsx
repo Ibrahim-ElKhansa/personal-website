@@ -19,7 +19,6 @@ import HadiImage from "@/../public/projects/hadi.png";
 import MusiclebImage from "@/../public/projects/musicleb.png";
 import MelodyMitsImage from "@/../public/projects/melody-mits.png";
 import MaqamNetwork from "@/../public/projects/maqam-network.png";
-import AazawaakImage from "@/../public/projects/aazawaak.png";
 import WheresMyShattafeImage from "@/../public/projects/wheres-my-shattafe.png";
 import MyUnfollowersImage from "@/../public/projects/my-unfollowers.png";
 import WhatsAppMentionerImage from "@/../public/projects/whatsapp-mentioner.png";
@@ -130,13 +129,13 @@ export default function HomePage() {
       duration: 12,
     },
     {
-      title: "3azaw2ak",
-      subTitle: "Mobile Food App",
+      title: "My Unfollowers",
+      subTitle: "Instagram Followers Analyzer",
       description:
-        "A cross-platform mobile app for Android and iOS built with React Native, Expo, and Firebase. Developed a serverless backend with Firebase Cloud Functions, real-time data sync with Firebase Realtime Database, and robust authentication using Firebase Authentication and App Check.",
-      link: "",
-      image: AazawaakImage,
-      duration: 10,
+        "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
+      link: "https://my-unfollowers.vercel.app/",
+      image: MyUnfollowersImage,
+      duration: 2,
     },
     {
       title: "Where's My Shattafe",
@@ -146,15 +145,6 @@ export default function HomePage() {
       link: "https://wheres-my-shattafe.vercel.app",
       image: WheresMyShattafeImage,
       duration: 2,
-    },
-    {
-      title: "My Unfollowers",
-      subTitle: "Instagram Followers Analyzer",
-      description:
-        "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
-      link: "https://my-unfollowers.vercel.app/",
-      image: MyUnfollowersImage,
-      duration: 1.5,
     }
   ];
 
