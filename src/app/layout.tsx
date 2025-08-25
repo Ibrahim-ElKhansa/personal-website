@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className={inter.variable}>
+      <body className={inter.variable}>
         {children}
         <Analytics />
       </body>
