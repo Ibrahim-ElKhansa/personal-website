@@ -22,6 +22,7 @@ import MaqamNetwork from "@/../public/projects/maqam-network.png";
 import WheresMyShattafeImage from "@/../public/projects/wheres-my-shattafe.png";
 import MyUnfollowersImage from "@/../public/projects/my-unfollowers.png";
 import WhatsAppMentionerImage from "@/../public/projects/whatsapp-mentioner.png";
+import PortfolimeImage from "@/../public/projects/portfolime.png";
 
 interface Experience {
   company: string;
@@ -40,11 +41,11 @@ interface Project {
 }
 
 export default function HomePage() {
-  const skills = ["Javascript", "Typescript", "React", "Next.js", "Node.js", "Express.js", "Firebase", "MongoDB", "Supabase", "PostgreSQL", "Java", "Python", "Machine Learning", "Git", "HTML/CSS"];
+  const skills = ["Javascript", "Typescript", "React", "Next.js", "Node.js", "SCSS", "Firebase", "MongoDB", "Supabase", "Python", "Java", "Git"];
 
   const experiences: Experience[] = [
     {
-      company: "American University of Beirut",
+      company: "AUB Research Lab",
       role: "Part Time Research Assistant",
       period: "June 2025 - Aug 2025",
       description:
@@ -93,13 +94,22 @@ export default function HomePage() {
       duration: 30,
     },
     {
-      title: "Melody Mits",
-      subTitle: "Gesture-Controlled MIDI Glove",
+      title: "Portfolime",
+      subTitle: "CV to Portfolio Website Generator",
       description:
-        "A gesture-controlled MIDI glove that maps hand movements into musical commands. Designed to integrate with AI models like RAVE, it allows musicians to create and manipulate sound in real time through intuitive gestures.",
-      link: "https://github.com/Ibrahim-ElKhansa/melody-mits",
-      image: MelodyMitsImage,
-      duration: 26,
+        "A modern web application that transforms CVs into customizable portfolio websites. Users upload their CV, verify and edit their information, and customize their portfolio design in a seamless, user-friendly flow. Built with Next.js, TypeScript, SCSS, Firebase, OpenAI API for resume parsing, and PDF processing libraries",
+      link: "https://portfolime.com",
+      image: PortfolimeImage,
+      duration: 25,
+    },
+    {
+      title: "H.A.D.I.",
+      subTitle: "AI-Powered Disease Prediction Platform",
+      description:
+        "A machine learning-powered platform that predicts diseases based on user-reported symptoms. Integrated OpenAI’s GPT API for medication data, deployed using Docker, Vercel, and Fly.io for scalability and performance.",
+      link: "https://hadi-online-doctor.vercel.app",
+      image: HadiImage,
+      duration: 12,
     },
     {
       title: "Maqam Network",
@@ -120,19 +130,18 @@ export default function HomePage() {
       duration: 3,
     },
     {
-      title: "H.A.D.I.",
-      subTitle: "AI-Powered Disease Prediction Platform",
+      title: "Melody Mits",
+      subTitle: "Gesture-Controlled MIDI Glove",
       description:
-        "A machine learning-powered platform that predicts diseases based on user-reported symptoms. Integrated OpenAI’s GPT API for medication data, deployed using Docker, Vercel, and Fly.io for scalability and performance.",
-      link: "https://hadi-online-doctor.vercel.app",
-      image: HadiImage,
-      duration: 12,
+        "A gesture-controlled MIDI glove that maps hand movements into musical commands. Designed to integrate with AI models like RAVE, it allows musicians to create and manipulate sound in real time through intuitive gestures.",
+      link: "https://github.com/Ibrahim-ElKhansa/melody-mits",
+      image: MelodyMitsImage,
+      duration: 16,
     },
     {
       title: "My Unfollowers",
       subTitle: "Instagram Followers Analyzer",
-      description:
-        "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
+      description: "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
       link: "https://my-unfollowers.vercel.app/",
       image: MyUnfollowersImage,
       duration: 2,
@@ -145,7 +154,7 @@ export default function HomePage() {
       link: "https://wheres-my-shattafe.vercel.app",
       image: WheresMyShattafeImage,
       duration: 2,
-    }
+    },
   ];
 
   const hobbyImages = [ImageZero, ImageOne, ImageTwo, ImageThree, ImageFour, ImageFive, ImageSix, ImageSeven, ImageEight, ImageNine];
@@ -169,7 +178,7 @@ export default function HomePage() {
               ))}
             </div>
             <div className="headInformation__line-4">
-              <a href={"mailto:ibrahimelkhansa02@gmail.com"} target="_blank" rel="noopener noreferrer">
+              <a href={"mailto:me@ibrahimelkhansa.com"} target="_blank" rel="noopener noreferrer">
                 <EmailIcon />
                 Email
               </a>
