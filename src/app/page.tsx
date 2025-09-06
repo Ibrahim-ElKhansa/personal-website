@@ -22,6 +22,7 @@ import MaqamNetwork from "@/../public/projects/maqam-network.png";
 import WheresMyShattafeImage from "@/../public/projects/wheres-my-shattafe.png";
 import MyUnfollowersImage from "@/../public/projects/my-unfollowers.png";
 import WhatsAppMentionerImage from "@/../public/projects/whatsapp-mentioner.png";
+import NoterSticky from "@/../public/projects/noter-sticky.png";
 import PortfolimeImage from "@/../public/projects/portfolime.png";
 
 interface Experience {
@@ -41,9 +42,16 @@ interface Project {
 }
 
 export default function HomePage() {
-  const skills = ["Javascript", "Typescript", "React", "Next.js", "Node.js", "SCSS", "Firebase", "MongoDB", "Supabase", "Python", "Java", "Git"];
+  const skills = ["Javascript", "Typescript", "React", "Next.js", "n8n", "Node.js", "SCSS", "Firebase", "MongoDB", "Supabase", "Python", "Java", "Git"];
 
   const experiences: Experience[] = [
+    {
+      company: "Maids.cc",
+      role: "Full Time Business Analyst",
+      period: "August 2025 - Present",
+      description:
+        "Currently working as a process improvement analyst at Maids.cc, a leading tech-driven home care services company based in Dubai. I primarily focus on analyzing and optimizing business processes using n8n.",
+    },
     {
       company: "AUB Research Lab",
       role: "Part Time Research Assistant",
@@ -97,7 +105,7 @@ export default function HomePage() {
       title: "Portfolime",
       subTitle: "CV to Portfolio Website Generator",
       description:
-        "A modern web application that transforms CVs into customizable portfolio websites. Users upload their CV, verify and edit their information, and customize their portfolio design in a seamless, user-friendly flow. Built with Next.js, TypeScript, SCSS, Firebase, OpenAI API for resume parsing, and PDF processing libraries",
+        "A modern web application that transforms CVs into customizable portfolio websites. Users upload their CV, verify and edit their information, and customize their portfolio design in a seamless, user-friendly flow. Built with Next.js, TypeScript, SCSS, Firebase, OpenAI API for resume parsing, and PDF processing libraries.",
       link: "https://portfolime.com",
       image: PortfolimeImage,
       duration: 25,
@@ -128,6 +136,15 @@ export default function HomePage() {
       link: "/WhatsApp-Mentioner.exe",
       image: WhatsAppMentionerImage,
       duration: 3,
+    },
+    {
+      title: "Noter Sticky",
+      subTitle: "Digital Sticky Notes & Visual Organization Tool",
+      description:
+        "A modern sticky notes application built with atomic design principles and shadcn/ui components. Features an infinite canvas for organizing thoughts, drag-and-drop interactions, and real-time auto-save. Built with Next.js 15, React 19, Tailwind, TypeScript, and Supabase for authentication and storage.",
+      link: "https://stickynoter.org/",
+      image: NoterSticky,
+      duration: 2,
     },
     {
       title: "Melody Mits",
