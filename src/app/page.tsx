@@ -42,7 +42,7 @@ interface Project {
 }
 
 export default function HomePage() {
-  const skills = ["Javascript", "Typescript", "React", "Next.js", "n8n", "Node.js", "SCSS", "Firebase", "MongoDB", "Supabase", "Python", "Java", "Git"];
+  const skills = ["Javascript", "Typescript", "React", "Next.js", "Nest.js", "Node.js", "n8n", "SCSS", "Firebase", "MongoDB", "Supabase", "Snowflake", "Python", "Java", "Git"];
 
   const experiences: Experience[] = [
     {
