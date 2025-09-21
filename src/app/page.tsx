@@ -50,7 +50,14 @@ export default function HomePage() {
       role: "Full Time Business Analyst",
       period: "August 2025 - Present",
       description:
-        "Currently working as a process improvement analyst at Maids.cc, a leading tech-driven home care services company based in Dubai. I primarily focus on analyzing and optimizing business processes using n8n.",
+        "Currently working as a process improvement analyst at Maids.cc. I design and implement workflows, automate operational tasks, analyze and optimize business logic, and drive process improvements across multiple business functions.",
+    },
+    {
+      company: "Freelance",
+      role: "Software Engineer",
+      period: "June 2025 - Present",
+      description:
+        "Developed multiple professional multi-tear client applications following SOLID principles and atomic design methodology for scalable, maintainable code architecture.",
     },
     {
       company: "AUB Research Lab",
