@@ -42,12 +42,30 @@ interface Project {
 }
 
 export default function HomePage() {
-  const skills = ["Javascript", "Typescript", "React", "Next.js", "Nest.js", "Node.js", "n8n", "SCSS", "Firebase", "MongoDB", "Supabase", "Snowflake", "Python", "Java", "Git"];
+  const skills = [
+    "Javascript",
+    "Typescript",
+    "React",
+    "Next.js",
+    "Nest.js",
+    "Node.js",
+    "n8n",
+    "SCSS",
+    "Firebase",
+    "MongoDB",
+    "Supabase",
+    "Snowflake",
+    "LangSmith",
+    "Notion",
+    "Python",
+    "Java",
+    "Git",
+  ];
 
   const experiences: Experience[] = [
     {
       company: "Maids.cc",
-      role: "Full Time Business Analyst",
+      role: "Process Improvement Analyst",
       period: "August 2025 - Present",
       description:
         "Currently working as a process improvement analyst at Maids.cc. I design and implement workflows, automate operational tasks, analyze and optimize business logic, and drive process improvements across multiple business functions.",
@@ -165,23 +183,35 @@ export default function HomePage() {
     {
       title: "My Unfollowers",
       subTitle: "Instagram Followers Analyzer",
-      description: "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
+      description:
+        "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
       link: "https://my-unfollowers.vercel.app/",
       image: MyUnfollowersImage,
       duration: 2,
     },
-    {
-      title: "Where's My Shattafe",
-      subTitle: "Community-Driven Public Bidet Map",
-      description:
-        "An open-source platform for mapping public toilets with bidets. Features interactive mapping with CartoDB and Leaflet, Google OAuth authentication, real-time location finding, and community-driven submissions with moderation. Built with Next.js 15, Supabase, and TypeScript.",
-      link: "https://wheres-my-shattafe.vercel.app",
-      image: WheresMyShattafeImage,
-      duration: 2,
-    },
+    // {
+    //   title: "Where's My Shattafe",
+    //   subTitle: "Community-Driven Public Bidet Map",
+    //   description:
+    //     "An open-source platform for mapping public toilets with bidets. Features interactive mapping with CartoDB and Leaflet, Google OAuth authentication, real-time location finding, and community-driven submissions with moderation. Built with Next.js 15, Supabase, and TypeScript.",
+    //   link: "https://wheres-my-shattafe.vercel.app",
+    //   image: WheresMyShattafeImage,
+    //   duration: 2,
+    // },
   ];
 
-  const hobbyImages = [ImageZero, ImageOne, ImageTwo, ImageThree, ImageFour, ImageFive, ImageSix, ImageSeven, ImageEight, ImageNine];
+  const hobbyImages = [
+    ImageZero,
+    ImageOne,
+    ImageTwo,
+    ImageThree,
+    ImageFour,
+    ImageFive,
+    ImageSix,
+    ImageSeven,
+    ImageEight,
+    ImageNine,
+  ];
 
   return (
     <div className="mainContainer">
@@ -192,8 +222,13 @@ export default function HomePage() {
             <Image src={ProfilePic} alt="Profile Pic" fill sizes="100%" />
           </div>
           <div className="headInformation">
-            <div className="headInformation__line-1">Fullstack Web & App Developer</div>
-            <div className="headInformation__line-2">Computer Science Engineering Graduate at AUB with a Minor in Economics</div>
+            <div className="headInformation__line-1">
+              Automation & Development Engineer
+            </div>
+            <div className="headInformation__line-2">
+              Computer Science Engineering Graduate at AUB with a Minor in
+              Economics
+            </div>
             <div className="headInformation__line-3">
               {skills.map((skill, index) => (
                 <div className="headInformation__skill" key={index}>
@@ -202,19 +237,34 @@ export default function HomePage() {
               ))}
             </div>
             <div className="headInformation__line-4">
-              <a href={"mailto:me@ibrahimelkhansa.com"} target="_blank" rel="noopener noreferrer">
+              <a
+                href={"mailto:me@ibrahimelkhansa.com"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <EmailIcon />
                 Email
               </a>
-              <a href={"https://www.linkedin.com/in/ibrahimelkhansa/"} target="_blank" rel="noopener noreferrer">
+              <a
+                href={"https://www.linkedin.com/in/ibrahimelkhansa/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LinkedInIcon />
                 LinkedIn
               </a>
-              <a href={"https://github.com/Ibrahim-ElKhansa"} target="_blank" rel="noopener noreferrer">
+              <a
+                href={"https://github.com/Ibrahim-ElKhansa"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GitHubIcon />
                 GitHub
               </a>
-              <a href={"/IbrahimElKhansaCV.pdf"} download="IbrahimElKhansaCV.pdf">
+              <a
+                href={"/IbrahimElKhansaCV.pdf"}
+                download="IbrahimElKhansaCV.pdf"
+              >
                 Download My CV
               </a>
             </div>
@@ -224,13 +274,24 @@ export default function HomePage() {
       <section className="infoContainer">
         <p className="title">About Me</p>
         <p className="aboutDescription">
-          I&apos;ve been a full-stack software engineer since 2022, focused on building practical solutions that solve real-world problems and address gaps in the market. I graduated from the American
-          University of Beirut in May 2025 with a degree in Computer Science Engineering and a minor in Economics. Ever since I learnt to develop web apps in my second year of college, I have been
-          working independently on projects that merge technical expertise with innovative thinking to create value for users and communities.
+          I&apos;ve been a full-stack software engineer since 2022, focused on
+          building practical solutions that solve real-world problems and
+          address gaps in the market. I graduated from the American University
+          of Beirut in May 2025 with a degree in Computer Science Engineering
+          and a minor in Economics. Ever since I learnt to develop web apps in
+          my second year of college, I have been working on
+          projects that merge technical expertise with innovative thinking to
+          create value for users and communities.
           <br />
-          <br />I take an entrepreneurial approach to software development, identifying opportunities, building solutions from the ground up, and iterating until I deliver something meaningful. My
-          projects have been entirely self-directed, and I enjoy working across the full stack to bring ideas to life. I’m always exploring new technologies and approaches to expand my skills and make
-          a positive impact through my work.
+          <br />
+          My career has evolved to encompass both development and automation,
+          where I design and implement workflows that streamline operations and
+          drive process improvements across business functions. I leverage my
+          technical background to automate operational tasks, analyze business
+          logic, and optimize processes that enhance efficiency and
+          productivity. This transition has deepened my understanding of how
+          technology can transform business operations and create measurable
+          impact.
         </p>
       </section>
       <section className="infoContainer">
@@ -246,7 +307,9 @@ export default function HomePage() {
                   </h3>
                   <span className="experienceRole">{experience.role}</span>
                 </div>
-                <span className="experience__line-1__period">{experience.period}</span>
+                <span className="experience__line-1__period">
+                  {experience.period}
+                </span>
               </span>
               <p>{experience.description}</p>
             </div>
@@ -259,7 +322,12 @@ export default function HomePage() {
           {projects.map((project, index) => (
             <div className="project" key={index}>
               <div className="projectImageContainer">
-                <Image src={project.image} alt={`Picture of ${project.title}`} fill sizes="100%" />
+                <Image
+                  src={project.image}
+                  alt={`Picture of ${project.title}`}
+                  fill
+                  sizes="100%"
+                />
               </div>
               <div className="projectInformation">
                 <div className="projectInformation__line-1">
@@ -271,7 +339,11 @@ export default function HomePage() {
                             {project.title}
                           </a>
                         ) : (
-                          <a href={project.link} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             {project.title}
                           </a>
                         )
@@ -282,7 +354,9 @@ export default function HomePage() {
                     <span className="projectSubTitle">{project.subTitle}</span>
                   </span>
                 </div>
-                <p className="projectInformation__line-2">{project.description}</p>
+                <p className="projectInformation__line-2">
+                  {project.description}
+                </p>
               </div>
             </div>
           ))}
@@ -291,12 +365,19 @@ export default function HomePage() {
       <section className="infoContainer">
         <p className="title"> Hobbies</p>
         <p className="hobbyText">
-          Outside of work, I’m also a drummer. I’ve played at events big and small, collaborating with many musicians along the way. Here are a few moments from performances that mean a lot to me:
+          Outside of work, I’m also a drummer. I’ve played at events big and
+          small, collaborating with many musicians along the way. Here are a few
+          moments from performances that mean a lot to me:
         </p>
         <div className="hobbyImages">
           {hobbyImages.map((image, i) => (
             <div key={i} className="hobbyImageContainer">
-              <Image src={image} alt={`Picture of me drumming ${i + 1}`} fill sizes="100%" />
+              <Image
+                src={image}
+                alt={`Picture of me drumming ${i + 1}`}
+                fill
+                sizes="100%"
+              />
             </div>
           ))}
         </div>
