@@ -11,9 +11,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Ibrahim El Khansa - Portfolio",
-  description: "Hello, my name is Ibrahim El Khansa and this is my portfolio website showcasing my work experiences and developments. I have been a full stack developer since 2022 and you can explore my projects like Maqam Network, MusicLeb, Melody Mits, H.A.D.I., Coursis and 3azaw2ak",
+  description: "Automation & Development Engineer with a Computer Science Engineering degree from AUB and minor in Economics. Specializing in process automation, workflow optimization, and full-stack development. Focused on building practical solutions that solve real-world problems and drive business efficiency.",
+  openGraph: {
+    title: "Ibrahim El Khansa - Portfolio",
+    description: "Automation & Development Engineer with a Computer Science Engineering degree from AUB and minor in Economics. Specializing in process automation, workflow optimization, and full-stack development. Focused on building practical solutions that solve real-world problems and drive business efficiency.",
+    type: "website",
+    locale: "en_US",
+  },
   twitter: {
     card: "summary_large_image",
+    title: "Ibrahim El Khansa - Portfolio",
+    description: "Automation & Development Engineer with a Computer Science Engineering degree from AUB and minor in Economics. Specializing in process automation, workflow optimization, and full-stack development. Focused on building practical solutions that solve real-world problems and drive business efficiency.",
   },
 };
 
