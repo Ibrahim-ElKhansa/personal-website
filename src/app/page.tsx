@@ -19,7 +19,6 @@ import HadiImage from "@/../public/projects/hadi.png";
 import MusiclebImage from "@/../public/projects/musicleb.png";
 import MelodyMitsImage from "@/../public/projects/melody-mits.png";
 import MaqamNetwork from "@/../public/projects/maqam-network.png";
-import WheresMyShattafeImage from "@/../public/projects/wheres-my-shattafe.png";
 import MyUnfollowersImage from "@/../public/projects/my-unfollowers.png";
 import WhatsAppMentionerImage from "@/../public/projects/whatsapp-mentioner.png";
 import NoterSticky from "@/../public/projects/noter-sticky.png";
