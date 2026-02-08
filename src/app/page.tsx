@@ -120,7 +120,7 @@ export default function HomePage() {
       title: "MusicLeb",
       subTitle: "Hub for Everything Music Lebanon",
       description:
-        "A virtual hub for the Lebanese music scene, connecting musicians, artists, and fans. Developed the full-stack application using Next.js, MongoDB, and Vercel, with a focus on performance optimization and community building.",
+        "A virtual hub for the Lebanese music scene, connecting musicians, artists, and fans. Developed the full-stack application using Next.js, MongoDB, and Netlify, with a focus on performance optimization and community building.",
       link: "https://www.musicleb.com",
       image: MusiclebImage,
       duration: 30,
@@ -138,8 +138,8 @@ export default function HomePage() {
       title: "H.A.D.I.",
       subTitle: "AI-Powered Disease Prediction Platform",
       description:
-        "A machine learning-powered platform that predicts diseases based on user-reported symptoms. Integrated OpenAI’s GPT API for medication data, deployed using Docker, Vercel, and Fly.io for scalability and performance.",
-      link: "https://hadi-online-doctor.vercel.app",
+        "A machine learning-powered platform that predicts diseases based on user-reported symptoms. Integrated OpenAI’s GPT API for medication data, deployed using Docker and Fly.io for scalability and performance.",
+      link: "https://dr-hadi.fly.dev/",
       image: HadiImage,
       duration: 12,
     },
@@ -148,7 +148,7 @@ export default function HomePage() {
       subTitle: "Arabic Music Theory Platform",
       description:
         "An educational platform for exploring Arabic music theory, featuring maqamat, ajnas, seyr, and tuning systems. Developed tools for transpositions, interactive visualizations, and dynamic audio playback. Built with Next.js, TypeScript, and SCSS.",
-      link: "https://arabic-maqam-network.vercel.app/",
+      link: "https://arabic-maqam-archive.netlify.app/",
       image: MaqamNetwork,
       duration: 25,
     },
@@ -184,19 +184,10 @@ export default function HomePage() {
       subTitle: "Instagram Followers Analyzer",
       description:
         "A website that gives you insight into your Instagram followers and following lists, showing who follows you back and who doesn’t. Built with Next.js, TypeScript, React, and SCSS.",
-      link: "https://my-unfollowers.vercel.app/",
+      link: "https://myunfollowers.app/",
       image: MyUnfollowersImage,
       duration: 2,
     },
-    // {
-    //   title: "Where's My Shattafe",
-    //   subTitle: "Community-Driven Public Bidet Map",
-    //   description:
-    //     "An open-source platform for mapping public toilets with bidets. Features interactive mapping with CartoDB and Leaflet, Google OAuth authentication, real-time location finding, and community-driven submissions with moderation. Built with Next.js 15, Supabase, and TypeScript.",
-    //   link: "https://wheres-my-shattafe.vercel.app",
-    //   image: WheresMyShattafeImage,
-    //   duration: 2,
-    // },
   ];
 
   const hobbyImages = [
